@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Genkicell-Decentralized Health Data Trading System - 元气链</title>
+   <meta name="keywords" content="genkicell,元气链"> 
+   <meta name="description"
+      content="Genkicell（元气链）は、ブロックチェーン技術を活用し、サイロ化されたデータ及びIoTデバイスで収集されたパーソナルヘルスデータ（PLHR）をヘルスケア産業に提供することで、人々の健康的なライフスタイルを実現する予防医療の基盤となることを目指しています。">
+   <link rel="Shortcut Icon" href="imgs/title.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="css/pc.css?v=0001">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/phone.css?v=1">
+    <link href="https://lib.baomitu.com/Swiper/2.7.0/idangerous.swiper.min.css" rel="stylesheet">
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  
+  hm.src = "https://hm.baidu.com/hm.js?ac2c89c4fb46edf25a77b84063f52c9b";
+  
+  var s = document.getElementsByTagName("script")[0]; 
+  
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<body>
+    <!-- <div class="index-header-box">
+        <div class="index-header pcshow">
+            <div class="wrapper overflowhidden">
+                <div class="header-l">Health Management dApp，One health data analysis and collection framework</div>
+                <div class="header-r">
+                    <div class="r-Japan">
+                        <img class="r-countryImg" src="imgs/index_Japan.png" alt="">
+                        <span>Japanese</span>
+                    </div>
+                    <div class="r-line">|</div>
+                    <div class="r-en">
+                        <img class="r-countryImg" src="imgs/index_en.png" alt="">
+                        <span>English</span>
+                    </div>
+                    <button class="r-sign">Sign in</button>
+                </div>
+            </div>
+        </div>
+        <div class="index-nav pcshow">
+            <div class="wrapper overflowhidden">
+                <a href="" class="nav-logo">
+                    <img class="logo" src="imgs/logo.png" alt="">
+                </a>
+                <ul class="nav-box">
+                    <li class="item cur">Intorduction</li>
+                    <li class="item">Roadmap</li>
+                    <li class="item">Team</li>
+                    <li class="item">Whitepaper</li>
+                    <li class="item">News</li>
+                    <li class="item">Announcement</li>
+                </ul>
+            </div>
+        </div>
+        <div class="phoneshow m-index-header">
+            <div class="line1">
+                <p>Health Management dApp，One health data analysis and collection framework</p>
+                <button>Sign in</button>
+            </div>
+            <div class="line2">
+                <img src="imgs/wap_logo.png" alt="">
+                <button class="type">ENG</button>
+                <button class="navbtn">ss</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="index-video-box hide">
+        <video src="video/vcr.mp4" class="index-video" controls></video>
+        <div class="cover-bg"></div>
+    </div>
+    <div class="index-banner">
+        <img class="pic" src="imgs/logo.gif" alt="">
+        <div class="wrapper">
+            <button class="btn pcshow js-index-watch">Watch video</button>
+        </div>
+    </div>
+    <div class="index-introduction" id='Introduction'>
+        <a href="javascript:;"></a>
+        <div class="content">
+            <div class="content-title mIndexCommonTitle">プロジェクトについて</div>
+            <div class="content-content m-index-introduction-content">Genkicellは、ブロックチェーン技術を活用し、サイロ化されたデータ及びIoTデバイスで収集されたパーソナルヘルスデータ（PHR）をヘルスケア産業に提供することで、人々の健康的なライフスタイルを実現する予防医療の基盤となることを目指しています。また、Genkicellでは、個人のヘルスケアデータをデジタル資産に変換し、複数人による検証を通じてデータ資産の信頼性を保つことができます。そして、Genkicellにより加工されたヘルスケアデータはヘルスケアサービスの質を高めると同時に、Genkicellは、中小規模の研究機関、個人にもビッグデータ分析処理サービスを提供することが可能です。
+            </div>
+            <ul class="content-icons">
+                <li class="item">
+                    <img class="icon" src="imgs/index_introduction_icon1.png" alt="">
+                    <span class="t">利便性のあるアプリモジュール</span>
+                </li>
+                <li class="item">
+                    <img class="icon" src="imgs/index_introduction_icon2.png" alt="">
+                    <span class="t">信頼的なデータタグ付け</span>
+                </li>
+                <li class="item">
+                    <img class="icon" src="imgs/index_introduction_icon3.png" alt="">
+                    <span class="t">ビジネスTPSレベル </span>
+                </li>
+                <li class="item">
+                    <img class="icon" src="imgs/index_introduction_icon4.png" alt="">
+                    <span class="t">低コストのビッグデータ分析</span>
+                </li>
+            </ul>
+        </div>
+        <div class="picbox">
+            <img class="pic" src="imgs/index_introduction_r.gif" alt="">
+        </div>
+        <div class="btnbox phoneshow">
+            <button class="more mIndexCommonBtnBorder js-m-index-introduction-btn">Read More</button>
+            <button class="watch js-index-watch mIndexCommonBtnBg">Watch video</button>
+        </div>
+    </div>
+    <div class="index-features">
+        <div class="wrapper">
+            <div class="title mIndexCommonTitle">技術的な優位性</div>
+            <div class="subtitle">現在のヘルスケア産業におけるボトルネックに基づき、Genkicellはブロックチェーンテクノロジーを用いて、ヘルスケアボリュームエコシステムを構築するために以下のようなイノベーションを行います。
+            </div>
+            <ul class="content">
+                <li class="item">
+                    <div class="imgbox">
+                        <img src="imgs/features4.png" alt="">
+                    </div>
+                    <span>匿名性の高いプロセスデザイン：データ提供者のプラバシー及び安全性を確保します。</span>
+                </li>
+                <li class="item">
+                    <div class="imgbox">
+                        <img src="imgs/features3.png" alt="">
+                    </div>
+                    <span>重み付けのアルゴリズム：非効率的な部分を最適化し、Genkicellエコシステムにおけるすべての参加者の行動履歴を分析することで、エコシステム全体における不正行為を排除します。</span>
+                </li>
+                <li class="item">
+                    <div class="imgbox">
+                        <img src="imgs/features2.png" alt="">
+                    </div>
+                    <span>コンセンサスアルゴリズム：重み付けシステムを加えることによりDPoSの仕組みが改良され、第三者からの不正行為を効果的に防ぐことができます。個々人の信頼性に依存する必要性が低減され、従来の仕組みよりもさらに非中央集権化されたDPoSより優れたコンセンサスアルゴリズムを実現しています。</span>
+                </li>
+                <li class="item">
+                    <div class="imgbox">
+                        <img src="imgs/features1.png" alt="">
+                    </div>
+                    <span>マルチなデータのタグ付け：独自のトランザクション構造によって、マルチなデータの承認における基本機能を実現し、エコシステム内におけるデータの信頼性と有効性を保全すると同時に、データの価値あるもにします</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="index-system">
+        <div class="system-title mIndexCommonTitle">Genkicellのエコシステム</div>
+        <div class="system1">
+            <div class="top">
+                <div class="content js-system1-content">
+                    <p class="system1-content-p">Genkicellは信頼性の高い、データに価値を与えるエコシステムを構築します。エコシステム内の個人ユーザーは、自分のデータをGenkicellで共有することにより、包括的なヘルスケアサービスを享受すると同時に、ヘルスケア関連のサービス及び商品の購入も効率的に行えます。また、エコシステム内のサービス提供者にとって、効率的なマネジメントツールを導入でき、より質の高いサービスを提供することができます。そして、Genkicellのエコシステムに参加することにより、効率的に信頼できるデータを獲得するだけではなく、ヘルスケア研究におけるデータの分析処理のコストを低減することも可能です。</p>
+                    <button class="indexCommonBtn pcshow js-index-fullscreen">Full Screen</button>
+                    <div class="btnbox phoneshow">
+                        <button class="mIndexCommonBtnBorder more js-system1-readmore-btn">Read More</button>
+                        <button class="mIndexCommonBtnBg full js-m-index-fullscreen">Full Screen</button>
+                    </div>
+                </div>
+                <div class="picbox js-index-ecological-picbox">
+                    <img src="imgs/index_system_pic1.png" alt="">
+                    <button class="indexCommonBtn pcshow js-index-fullscreen-close hide" style="float:right;">Full Screen</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="bottom">
+                    <div class="bottom-title mIndexCommonTitle">ヘルスケアマネジメントDApp</div>
+                    <div class="bottom-content m-dAPP-content">Genkicellは、ヘルスケアデータ管理、ヘルスケアデバイス管理、ヘルスケア及び保健サービスを統合する、非中央集権化アプリケーション（DApp）のサービス及び開発フレームワークを提供します。ユーザーはDAppを通して、自身のヘルスケアデータを管理することができます。また、個人のヘルスレポートを自動的に作成すると同時に、データのアクセスを承認することで、報酬を獲得することができます。得られた報酬はDApp上で世界中のヘルスケアサービスを購入することができます。
+                    </div>
+                    <button class="bottom-more mIndexCommonBtnBorder phoneshow js-m-aAPP-readmore-btn">Read More</button>
+                    <!-- <div class="bottom-title2">特徴：</div> -->
+                    <ul class="bottom-icons">
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system1_pic1.png" alt="">
+                            <span class="t">ユーザーは自分のデータを完全に制御できます。</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system1_pic2.png" alt="">
+                            <span class="t">越境ヘルスケアサービス</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system1_pic3.png" alt="">
+                            <span class="t">デジタルヘルスレポート</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system1_pic4.png" alt="">
+                            <span class="t">安全性、信頼性の高いデータのシェアによる報酬の獲得</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="system2">
+            <div class="content-title system2-title mIndexCommonTitle">ヘルスケアデータの収集及び分析フレームワーク</div>
+            <div class="content">
+                <div class="content-content m-index-system2-content">Genkicellは効率的、信頼性の高いヘルスケアデータ分析システムを構築します。 研究者及び研究機関はGenkicellから提供されたフレームワークを用いて、より効率的にデータを獲得することができます。 Genkicellにおけるエコシステム及びフレームワークの構造により、データ利用者はデータ分析の結果以外を得ることができないため、データ提供者のプライバシーを保証することができます。
+                    ユーザーはGenkicellのエコシステムを用いて、データに関連するタスクを依頼することができます。中小開発研究機関はこのフレームワークを通して、データ分析処理のコストを低減することができます。
+                </div>
+                <button class="more mIndexCommonBtnBorder phoneshow js-m-index-system2-readmore-btn">Read More</button>
+                <!-- <div class="content-title2">Features：</div> -->
+                <ul class="content-icons">
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system1_pic1.png" alt="">
+                        <span class="t">信頼性の高いデータリソース</span>
+                    </li>
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system1_pic2.png" alt="">
+                        <span class="t">グローバル規模での効率的なデータ収集</span>
+                    </li>
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system1_pic3.png" alt="">
+                        <span class="t">データリソースのプライバシー保障</span>
+                    </li>
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system1_pic4.png" alt="">
+                        <span class="t">低コスト</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="picbox">
+                <img src="imgs/index_system2_pic.png" alt="">
+            </div>
+        </div>
+        <div class="systemItem system3">
+            <div class="mIndexCommonTitle title phoneshow">認知的アシスタントフレームワーク</div>
+            <div class="systemItem-picbox">
+                <img src="imgs/index_system_pic10.png" alt="">
+            </div>
+            <div class="systemItem-content">
+                <div class="content-title pcshow">
+                    認知的アシスタントフレームワーク   
+                </div>
+                <div class="system3-content">
+                     Genkicellは、ヘルスケア産業におけるニッチ分野のヘルスケアデータにおいて、ビッグデータ解析及び人工知能サービスによりヘルスケア産業の従業者の意思決定効率を高まることができます。
+                </div>
+                <!-- <div class="content-title2">Features：</div> -->
+                <ul class="content-icons">
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system_icon20.png" alt="">
+                        <span class="t">大量の構造化されたデータセットを提供</span>
+                    </li>
+                    <li class="item">
+                        <img class="icon" src="imgs/index_system_icon21.png" alt="">
+                        <span class="t">人工知能のモデルをタグ付けされたデータにより最適化</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="systemItem-out4">
+            <div class="systemItem system4">
+                <div class="phoneshow top">
+                    <div class="mIndexCommonTitle">ヘルスケアサービスマネジメントフレームワーク</div>
+                    <img src="imgs/index_system4_bg.png" alt="">
+                </div>
+                <div class="systemItem-content">
+                    <div class="content-title pcshow">ヘルスケアサービスマネジメントフレームワーク</div>
+                    <div class="content-content m-index-system4-content">Genkicellはユーザーにヘルスケアのマネジメントフレームワークを提供します。 このフレームワークを通して、ユーザーはヘルスケアサービス、設備管理、慢性病介護管理、ユーザー分布分析、薬品追跡、新薬開発など幅広く、簡単に開発を行うことができます。これにより、このフレームワークは、Genkicellのエコシステムにあるヘルスケアサービスの質を高めると同寺に、より合理的な資源配置により、データ分析による緻密な運営を実現し、サービス提供者のコストを低減することができます。
+                    </div>
+                    <button class="more mIndexCommonBtnBorder phoneshow js-m-index-readmore-btn">Read More</button>
+                    <!-- <div class="content-title2">Features：</div> -->
+                    <ul class="content-icons">
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system4_icon1.png" alt="">
+                            <span class="t">集客コスト低減</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system4_icon2.png" alt="">
+                            <span class="t">ユーザーポートレート分析</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system4_icon3.png" alt="">
+                            <span class="t">サービス質が高める</span>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="imgs/index_system4_icon4.png" alt="">
+                            <span class="t">データ分析による緻密な運営</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-content2">
+        <img class="index-content2-bgr" src="imgs/index_roadmap_bg2.png" alt="">
+        <div class="roadmap" id="Roadmap">
+            <div class="indexCommonTitleCenter mIndexCommonTitle">ロードマップ</div>
+            <div class="roadmap-main" style="height: 266px;">
+                <div class="main-item">
+                    <div class="left">2017 02</div>
+                    <div class="mid" style="height:80px;">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">ゲンキセル　プロジェクト起動</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2017 06</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">日本の各医療機関、コンソシアームと戦略的業務提携を結び、医療ビックデータの収集と実証実験を始まる</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2017 10</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">ホワイトペーパーを完成し、日本における金融庁の正規登録が始まる</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 01</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">JCDAと連携し、ビッグデータに基づいたボロックチェーンと予防医療の実験応用開始</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 03</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">ゲンキセルにおける1.3バーションのホワイトペーパーリリース</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 04</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1.プレスセール完了
+                        <br>2.ホームページ作成完了</div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 05</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">ロードショー及び関連宣伝活動起動
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 06</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1.戦略パートナーと提携
+                        <br>2.エコシステムコミュニティ設立
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 07</div>
+                    <div class="mid roadmap-needH3">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1.ロードショー及び宣伝
+                        <br>2.取引所登録手続き開始
+                        <br>3.ファンドからの融資完了
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 Q3</div>
+                    <div class="mid roadmap-needH4" style="height:105px;">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1. 人材確保
+                        <br>2. 学術の会議を定期的に開く、(One healthcare & Blockchain)
+                        <br>3. コンミュニティの開発
+                        <br>4. 運営及び相関技術開発を起動
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2018 Q4</div>
+                    <div class="mid" style="height:292px;">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1.フレームワークの設計を完了
+                        <br>2.アーキテクチャーをモジュール化する
+                        <br>3.相関医療機関とパートナーとの実証実験
+                        <br>4.ゲンキセールの専用ウォレットを開発
+                        <br>5.今まで協力していただいたパートナーと一緒に豊橋市でエコーシステムを作り出し、ゲンキセールのボロックチェーン技術の経済モデルと実際の応用を検討する。
+                        <br>6.日本及び世界の一流大学と研究室を設立する
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2019 Q1</div>
+                    <div class="mid roadmap-needH4" style="height:125px;">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1.AI研究機構と連携する
+                        <br>2.知能医療関連のモジュールを実現する
+                        <br>3.メインチェーン開発完了
+                        <br>4.プロジェクトの進歩に関する重要な情報を公示
+                    </div>
+                </div>
+                <div class="main-item">
+                    <div class="left">2019 Q2</div>
+                    <div class="mid">
+                        <img src="imgs/index_roadmap_icon.jpg" alt="">
+                        <p class="line"></p>
+                    </div>
+                    <div class="right">1. バッグを修復する
+                        <br>2. メインチェーンをリリースし、ソースコードを一般公開する
+                    </div>
+                </div>
+            </div>
+            <button class="roadmap-btn js-roadmap-btn mIndexCommonBtnBg">Read more</button>
+        </div>
+        <div class="team" id="Team">
+            <div class="indexCommonTitleCenter mIndexCommonTitle">チーム</div>
+            <ul class="team-main js-index-team pcshow">
+                <li class="item">
+                    <img src="imgs/index_person/p1.png" alt="">
+                    <p class="name">粟田 翔太</p>
+                    <p class="post">CEO</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p2.png" alt="">
+                    <p class="name">四條 能伸</p>
+                    <p class="post">CTO</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p3.png" alt="">
+                    <p class="name">立石 琢雄</p>
+                    <p class="post">IOT産業顧問</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p4_0.png" alt="">
+                    <p class="name">富田 尚史</p>
+                    <p class="post">首席金融顧問</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p4.png" alt="">
+                    <p class="name">佐々木　太裕</p>
+                    <p class="post">CRO</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p5.png" alt="">
+                    <p class="name">近都 真侑</p>
+                    <p class="post">CMO、医師</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p6.png" alt="">
+                    <p class="name">藤井 伸一</p>
+                    <p class="post">CAO</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p7.png" alt="">
+                    <p class="name">柴田 諭</p>
+                    <p class="post">日本政策研究顧問</p>
+                    <button>Read more</button>
+                </li>
+                <li class="item">
+                    <img src="imgs/index_person/p8.png" alt="">
+                    <p class="name">Charles Li</p>
+                    <p class="post">市場コンサルティング顧問</p>
+                    <button>Read more</button>
+                </li>
+            </ul>
+            <div class="team-main phoneshow">
+                <a class="arrow-left" href="#"></a>
+                <a class="arrow-right" href="#"></a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <div class="item">
+                                <img src="imgs/index_person/p1.png" alt="">
+                                <p class="name">粟田翔太</p>
+                                <p class="post">CEO</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="0" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                            <div class="item">
+                                <img src="imgs/index_person/p2.png" alt="">
+                                <p class="name">四條 能伸</p>
+                                <p class="post">CTO</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="1" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <div class="item">
+                                <img src="imgs/index_person/p3.png" alt="">
+                                <p class="name">立石 琢雄（知雄）</p>
+                                <p class="post">IOT産業顧問</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="2" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                            <div class="item">
+                                <img src="imgs/index_person/p4_0.png" alt="">
+                                <p class="name">富田 尚史</p>
+                                <p class="post">首席金融顧問</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="3" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide swiper-slide">
+                            <div class="item">
+                                <img src="imgs/index_person/p4.png" alt="">
+                                <p class="name">佐々木　太裕</p>
+                                <p class="post">CRO</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="3" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                            <div class="item">
+                                <img src="imgs/index_person/p5.png" alt="">
+                                <p class="name">近都 真侑</p>
+                                <p class="post">CMO、医師</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="4" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide swiper-slide">
+                            <div class="item">
+                                <img src="imgs/index_person/p6.png" alt="">
+                                <p class="name">藤井 伸一</p>
+                                <p class="post">CAO</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="5" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="imgs/index_person/p7.png" alt="">
+                                <p class="name">柴田 諭</p>
+                                <p class="post">日本政策研究顧問</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="6" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                           
+                        </div>
+                        <div class="slide swiper-slide">
+                            <div class="item">
+                                <img src="imgs/index_person/p8.png" alt="">
+                                <p class="name">Charles Li</p>
+                                <p class="post">市場コンサルティング顧問</p>
+                                <a href="javascript:;" onclick="toPop(this)" num="7" class="js-m-index-team-btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 公共Footer -->
+    <!-- <div class="index-footer">
+        <div class="wrapper">
+            <div class="footer-icons">
+                <img src="imgs/index_end_icon.png" alt="">
+                <img src="imgs/index_end_icon.png" alt="">
+                <img src="imgs/index_end_icon.png" alt="">
+                <img src="imgs/index_end_icon.png" alt="">
+                <img src="imgs/index_end_icon.png" alt="">
+                <img src="imgs/index_end_icon.png" alt="">
+            </div>
+            <div class="footer-logo">
+                <img src="imgs/logo_white.png" alt="">
+            </div>
+            <div class="footer-t">
+                Genkicell Foundation Ltd. All rights reserved
+                <br class="pcshow"> 2018
+            </div>
+        </div>
+    </div> -->
+    <div class="commonPopDetail index-pop-detail js-index-pop-detail hide">
+        <div class="x">×</div>
+        <div class="left">
+            <img class="logo" src="imgs/logo.png" alt="">
+            <img class="head" src="" alt="">
+            <div class="title">
+                <p class="name">Shota Awata</p>
+                <p class="post">CEO</p>
+            </div>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="commonPopDetail index-pop-normal js-index-pop-normal hide">
+        <div class="x">×</div>
+        <div class="title">
+            <p class="name">Shota Awata</p>
+            <p class="post">CEO</p>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="cover-bg index-cover-bg js-index-cover-bg hide"></div>
+</body>
+</html>
+<script src="https://lib.baomitu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/Swiper/2.7.0/idangerous.swiper.min.js"></script>
+<script src="js/main.js?v=2"></script>
+<script src="js/index_data.js"></script>
+<script>
+    $('.js-roadmap-btn').click(function () {
+        var h = $('.roadmap-main')[0].scrollHeight;
+        $('.roadmap-main').height(h);
+        $(this).hide();
+    });
+    commonFooter();
+    commonHeader_jp();
+    indexCommonPopArticle();
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.pagination',
+            loop: true,
+            // grabCursor: true,
+            // paginationClickable: true,
+            preventClicks: false
+        })
+        $('.index-content2 .team .team-main .slide').css('display', 'flex');
+        $('.arrow-left').on('click', function (e) {
+            console.log(234)
+            e.preventDefault()
+            mySwiper.swipePrev()
+        })
+        $('.arrow-right').on('click', function (e) {
+            e.preventDefault()
+            mySwiper.swipeNext()
+        })
+    }
+
+    $('.js-m-index-nav-x').click(function () {
+        $('.m-index-nav-content').hide();
+    });
+    $('.js-m-index-nav-show').click(function () {
+        $('.m-index-nav-content').show();
+    });
+    $('.js-index-watch').click(function () {
+        $('.index-video-box').show();
+    });
+    $('.index-video-box .cover-bg').click(function () {
+        $('.index-video-box').hide();
+        $('.index-video')[0].pause();
+    });
+    // team 人物详情
+    $('.js-index-team .item button').click(function () {
+        var index = $(this).parent().index();
+        var name = $(this).siblings('.name').text();
+        var post = $(this).siblings('.post').text();
+        var src = $(this).siblings('img')[0].src;
+        $('.js-index-pop-detail .name').html(name);
+        $('.js-index-pop-detail .post').html(post);
+        $('.js-index-pop-detail .head')[0].src = src;
+        $('.js-index-pop-detail .content').html(indexTeamArr_jp[index].t);
+        $('.js-index-cover-bg').show();
+        $('.js-index-pop-detail').show();
+    });
+    function toPop(obj) {
+        var index = $(obj).attr('num');
+        var name = $(obj).siblings('.name').text();
+        var post = $(obj).siblings('.post').text();
+        var src = $(obj).siblings('img')[0].src;
+        $('.js-index-pop-detail .name').html(name);
+        $('.js-index-pop-detail .post').html(post);
+        $('.js-index-pop-detail .head')[0].src = src;
+        $('.js-index-pop-detail .content').html(indexTeamArr_jp[index].t);
+        $('.js-index-cover-bg').show();
+        $('.js-index-pop-detail').show();
+    }
+
+    $('.js-index-pop-detail .x').click(function () {
+        $('.js-index-pop-detail').hide();
+        $('.js-index-cover-bg').hide();
+    });
+    $('.js-index-fullscreen').click(function () {
+        $(this).parent().hide();
+        $('.js-index-ecological-picbox').width('1200px');
+        $('.js-index-fullscreen-close').show();
+    });
+    $('.js-index-fullscreen-close').click(function () {
+        $('.js-system1-content').show();
+        $('.js-index-ecological-picbox').width('645px');
+        $('.js-index-fullscreen-close').hide();
+    });
+    $('.js-m-index-fullscreen').click(function () {
+        $('.js-index-ecological-picbox img').width('100%');
+    });
+    $('.js-m-index-introduction-btn').click(function () { $('.m-index-introduction-content').height($('.m-index-introduction-content')[0].scrollHeight);$(this).hide(); })
+    $('.js-system1-readmore-btn').click(function () { $('.system1-content-p').height($('.system1-content-p')[0].scrollHeight); $(this).hide(); })
+    $('.js-m-aAPP-readmore-btn').click(function () { $('.m-dAPP-content').height($('.m-dAPP-content')[0].scrollHeight); $(this).hide(); })
+    $('.js-m-index-system2-readmore-btn').click(function () { $('.m-index-system2-content').height($('.m-index-system2-content')[0].scrollHeight); $(this).hide(); })
+    $('.js-m-index-readmore-btn').click(function () { $('.m-index-system4-content').height($('.m-index-system4-content')[0].scrollHeight); $(this).hide(); })
+
+    $('.js-m-index-lang-choose').html('日本語');
+</script>
+<style>
+    /* .index-content2 .roadmap .roadmap-main .main-item .mid.needH{ } */
+    .swiper-wrapper{height: 250px;}
+</style>
